@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Darren Britton`
+    title: `Piyush Khanduri`
   },
   plugins: [
     {
@@ -67,8 +67,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Darren Britton Portfolio",
-        short_name: "Darren Britton",
+        name: "Piyush Khanduri Portfolio",
+        short_name: "Piyush Khanduri",
         start_url: "/",
         background_color: "#292929",
         theme_color: "#405375",
