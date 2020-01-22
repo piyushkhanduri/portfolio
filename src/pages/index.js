@@ -1,18 +1,18 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import { Flex, Box } from 'grid-styled'
-import styled, { css } from 'styled-components'
-import Img from 'gatsby-image'
-import FlickrHero from 'react-flickr-hero'
+import React from "react";
+import { graphql } from "gatsby";
+import { Flex, Box } from "grid-styled";
+import styled, { css } from "styled-components";
+import Img from "gatsby-image";
+import FlickrHero from "react-flickr-hero";
 
-import { media } from '../utils/style'
+import { media } from "../utils/style";
 
-import Layout from '../components/layout'
-import NavBar from '../components/navbar'
-import HeroText from '../components/heroText'
-import SocialIcons from '../components/socialIcons'
-import Portfolio from '../components/portfolio'
-import Showcase from '../components/showcase'
+import Layout from "../components/layout";
+import NavBar from "../components/navbar";
+import HeroText from "../components/heroText";
+import SocialIcons from "../components/socialIcons";
+import Portfolio from "../components/portfolio";
+import Showcase from "../components/showcase";
 
 const Content = styled.div`
   & > a {
@@ -23,10 +23,10 @@ const Content = styled.div`
   & > h1 {
     text-align: center;
   }
-`
+`;
 
 const Title = styled.h1`
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-transform: uppercase;
   letter-spacing: 6px;
   margin-bottom: 40px;
@@ -44,7 +44,7 @@ const Title = styled.h1`
       font-weight: 700;
       line-height: 24px;
     `}
-`
+`;
 
 const Section = styled.div`
   text-align: center;
@@ -52,7 +52,7 @@ const Section = styled.div`
   padding-bottom: 40px;
 
   a {
-    font-family: 'Lato';
+    font-family: "Lato";
   }
 
   p {
@@ -67,7 +67,7 @@ const Section = styled.div`
   h4,
   h5,
   h6 {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     text-transform: uppercase;
     color: #292929;
   }
@@ -137,7 +137,7 @@ const Section = styled.div`
         border-bottom: 1px solid #333 !important;
       }
     `}
-`
+`;
 
 const Item = styled.div`
   width: 40%;
@@ -168,7 +168,7 @@ const Item = styled.div`
     width: 90%;
 
   `}
-`
+`;
 
 export default props => {
   const content = (
@@ -182,25 +182,25 @@ export default props => {
       <HeroText />
       <SocialIcons
         style={{
-          position: 'absolute',
-          margin: '0 auto',
+          position: "absolute",
+          margin: "0 auto",
           left: 0,
           right: 0,
-          bottom: 16,
+          bottom: 16
         }}
         icons={[
           {
-            name: 'twitter',
-            href: 'https://twitter.com/darren_britton',
+            name: "twitter",
+            href: "https://twitter.com/darren_britton"
           },
           {
-            name: 'github-alt',
-            href: 'https://github.com/darrenbritton',
+            name: "github-alt",
+            href: "https://github.com/darrenbritton"
           },
           {
-            name: 'linkedin',
-            href: 'https://ie.linkedin.com/in/darrenbritton',
-          },
+            name: "linkedin",
+            href: "https://ie.linkedin.com/in/darrenbritton"
+          }
         ]}
       />
       <a id="about-me">About Me</a>
@@ -209,14 +209,16 @@ export default props => {
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
             <p>
-              Currently working as a software engineer at{' '}
-              <a href="https://shutterstock.com">Shutterstock</a> focusing on
-              the editorial content platform. As far as my work goes I've
-              probably worn every hat on the rack, most notable being Web
-              Developer, Software Engineer and Photographer. Don’t let my clean
-              lines and weakness for Swiss type fool you; My work has been
-              pretty diverse and enjoyable. For more information about me follow
-              one of my social media links above or at the bottom of the page.
+              Hi! I am Piyush Khanduri. “I am a Marketer by passion. I help
+              business to make right marketing decision.” Currently working as a
+              digital marketer at Publicis Groupe focusing on social media
+              marketing platforms. As far as my work goes I’ve probably worn
+              every hat on the rack, most notable my marketing strategies,
+              business reengineering and story telling. Don’t let my clean lines
+              and weakness for Swiss type fool you. My work has been pretty
+              diverse and enjoyable, to know more about my work and skills,
+              follow me on my blogs and social media channels. Links above or
+              bottom of the page.
             </p>
           </Box>
           <Box px={2} width={180}>
@@ -238,30 +240,30 @@ export default props => {
         <h4>Experience</h4>
         <span>Where I've worked.</span>
         <Item>
-          <span>MAY 2018 - CURRENT</span>
-          <h6>SHUTTERSTOCK</h6>
-          <p>Software Engineer</p>
+          <span>NOV 2019 - CURRENT</span>
+          <h6>Publicis Groupe</h6>
+          <p>Social Media Expert</p>
         </Item>
         <Item>
-          <span>JUNE 2016 - APRIL 2018</span>
-          <h6>SAP IRELAND</h6>
-          <p>Full Stack Developer</p>
+          <span>SEPT 2018 - NOV 2019</span>
+          <h6>Adapts Media</h6>
+          <p>Social Media Specialist</p>
         </Item>
         <Item>
-          <span>FEB 2015 - AUG 2015</span>
-          <h6>SAP IRELAND</h6>
-          <p>Support Engineer</p>
+          <span>FEB 2017 - AUG 2018</span>
+          <h6>KISAN (Krishi IS Acknowledged Now)</h6>
+          <p>Founder</p>
         </Item>
         <Item>
-          <span>JAN 2014 - JULY 2014</span>
-          <h6>ST DECLAN'S COLLEGE</h6>
-          <p>Full Stack Developer</p>
+          <span>JAN 2016 - JAN 2017</span>
+          <h6>Whacky Ideas Zone</h6>
+          <p>Marketing Executive</p>
         </Item>
       </Section>
       <a id="tech">Tech</a>
       <Section center>
-        <h4>Tech</h4>
-        <span>Technologies I enjoy working with.</span>
+        <h4>Associations</h4>
+        <span>Brands and projects I have worked with</span>
         <Showcase
           images={
             props.data.allImageSharp ? props.data.allImageSharp.edges : []
@@ -273,45 +275,37 @@ export default props => {
         <h4>EDUCATION</h4>
         <span>Education I've recieved.</span>
         <Item>
-          <span>2012 - 2016</span>
-          <h6>BSC COMPUTER SCIENCE (1st Class Honours)</h6>
-          <p>Dublin Institute of Technology</p>
+          <span>2013 - 2016</span>
+          <h6>BCom Honours</h6>
+          <p>GGSIP University, Delhi</p>
         </Item>
         <Item>
-          <span>2006 - 2012</span>
+          <span>2007-2012</span>
           <h6>SECONDARY EDUCATION</h6>
-          <p>Saint Declan's College</p>
+          <p>Vandana International School</p>
         </Item>
       </Section>
       <a id="honoursAndAwards">Honours & Awards</a>
       <Section center>
-        <h4>HONORS & AWARDS</h4>
-        <span>A list of honors and awards I have recieved for my work.</span>
-        <Item>
-          <span>2016</span>
-          <h6>BEST PROJECT (IN THE DIT PROJECT FAIR)</h6>
-          <p>SAP</p>
-        </Item>
-        <Item>
-          <span>2014</span>
-          <h6>GAMES STUDIO IRELAND CHALLENGE: BEST IN ORIGINAL STORY</h6>
-          <p>Games Fleadh</p>
-        </Item>
-        <Item>
-          <span>2010</span>
-          <h6>ACCESS ACCENTURE ACHIEVEMENT AWARD</h6>
-          <p>Accenture</p>
-        </Item>
+        <h4>TECH</h4>
+        <span>Technologies I enjoy working with</span>
+        <Showcase
+          images={
+            props.data.technologiesImageSharp
+              ? props.data.technologiesImageSharp.edges
+              : []
+          }
+        />
       </Section>
     </Content>
-  )
+  );
   return (
     <Layout location={props.location}>
       <NavBar main children={content.props.children} />
       {content}
     </Layout>
-  )
-}
+  );
+};
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -336,7 +330,7 @@ export const pageQuery = graphql`
                     shadow: "#111111"
                     opacity: 65
                   }
-                  ) {
+                ) {
                   ...GatsbyImageSharpSizes
                 }
               }
@@ -357,6 +351,20 @@ export const pageQuery = graphql`
         }
       }
     }
+    technologiesImageSharp: allFile(
+      filter: { relativePath: { regex: "/tech/" } }
+    ) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            sizes(maxWidth: 300) {
+              ...GatsbyImageSharpSizes_tracedSVG
+            }
+          }
+        }
+      }
+    }
     allFile(filter: { name: { regex: "/signature/" } }) {
       edges {
         node {
@@ -369,4 +377,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

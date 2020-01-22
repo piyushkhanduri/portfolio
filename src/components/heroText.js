@@ -1,8 +1,8 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
-import Typist from 'react-typist'
+import React from "react";
+import styled, { css } from "styled-components";
+import Typist from "react-typist";
 
-import { media } from '../utils/style'
+import { media } from "../utils/style";
 
 const StyledTypist = styled(Typist)`
   color: #fff;
@@ -12,9 +12,9 @@ const StyledTypist = styled(Typist)`
   line-height: 80px;
   font-weight: 100;
   text-transform: uppercase;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   ${media.md`
   left: 25%;
@@ -25,7 +25,7 @@ const StyledTypist = styled(Typist)`
   top: 15%;
   letter-spacing: 12px;
 `}
-`
+`;
 
 class HeroText extends React.Component {
   render() {
@@ -34,37 +34,37 @@ class HeroText extends React.Component {
         <Typist>
           <StyledTypist {...this.props}>
             <strong>
-              {this.props.text.split(' ').slice(0, 1)}
+              {this.props.text.split(" ").slice(0, 1)}
               <br />
             </strong>
             {this.props.text
-              .split(' ')
+              .split(" ")
               .slice(1)
-              .join(' ')}
+              .join(" ")}
           </StyledTypist>
         </Typist>
-      )
+      );
     }
     return (
       <StyledTypist cursor={{ show: false }} {...this.props}>
-        <strong>I Make</strong> Websites
-        <Typist.Backspace count={9} delay={300} />
-        <span> Web Apps</span>
-        <Typist.Backspace count={9} delay={300} />
-        <span> Video Games</span>
-        <Typist.Backspace count={12} delay={300} />
-        <span> Poor Life Decisions</span>
+        <strong>I Make</strong> Awesome D.M. Campaigns
+        <Typist.Backspace count={23} delay={300} />
+        <span> Psychology based B-plans</span>
+        <Typist.Backspace count={25} delay={300} />
+        <span> Business Models</span>
+        <Typist.Backspace count={16} delay={300} />
+        <span> Poor Emotional Choices</span>
         <Typist.Delay ms={100} />
         <span>.</span>
         <Typist.Delay ms={200} />
         <span>.</span>
         <Typist.Delay ms={300} />
         <span>.</span>
-        <Typist.Backspace count={29} delay={10} />
-        <strong>But Mostly Just</strong> Cool Web Stuff
+        <Typist.Backspace count={32} delay={10} />
+        <strong>But Mostly Just</strong> Cool Business Strategies
       </StyledTypist>
-    )
+    );
   }
 }
 
-export default HeroText
+export default HeroText;
