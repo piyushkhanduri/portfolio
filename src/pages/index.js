@@ -232,9 +232,9 @@ export default props => {
           </Box>
         </Flex>
       </Section>
-      <Title small>Portfolio</Title>
-      <a id="portfolio">Portfolio</a>
-      <Portfolio items={props.data.allMarkdownRemark.edges} />
+      {/* <Title small>Portfolio</Title> */}
+      {/* <a id="portfolio">Portfolio</a>
+      <Portfolio items={props.data.allMarkdownRemark.edges} /> */}
       <a id="experience">Experience</a>
       <Section center dark>
         <h4>Experience</h4>
@@ -303,42 +303,13 @@ export default props => {
     <Layout location={props.location}>
       <NavBar main children={content.props.children} />
       {content}
+      <a href="/blog">Blog</a>
     </Layout>
   );
 };
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          timeToRead
-          excerpt(pruneLength: 120)
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-            image {
-              childImageSharp {
-                sizes(
-                  maxWidth: 500
-                  duotone: {
-                    highlight: "#333333"
-                    shadow: "#111111"
-                    opacity: 65
-                  }
-                ) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
-            }
-          }
-        }
-      }
-    }
     allImageSharp: allFile(filter: { relativePath: { regex: "/logos/" } }) {
       edges {
         node {
