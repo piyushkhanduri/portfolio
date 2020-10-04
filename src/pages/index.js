@@ -209,7 +209,7 @@ export default props => {
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
             <p>
-              Hi! I am Piyush Khanduri. “I am a Marketer by passion. I help
+              Hey! I am Piyush Khanduri. “I am a Marketer by passion. I help
               business to make right marketing decision.” Currently working as a
               digital marketer at Publicis Groupe focusing on social media
               marketing platforms. As far as my work goes I’ve probably worn
