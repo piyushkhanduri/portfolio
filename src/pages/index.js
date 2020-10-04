@@ -234,7 +234,7 @@ export default props => {
         <Item>
           <span>NOV 2019 - CURRENT</span>
           <h6>Publicis Groupe</h6>
-          <p>Social Media Expert</p>
+          <p>Media Planner</p>
         </Item>
         <Item>
           <span>SEPT 2018 - NOV 2019</span>
@@ -252,7 +252,7 @@ export default props => {
           <p>Marketing Executive</p>
         </Item>
       </Section>
-      <a id="tech">Tech</a>
+      <a id="tech">Associations</a>
       <Section center>
         <h4>Associations</h4>
         <span>Brands and projects I have worked with</span>
@@ -267,17 +267,22 @@ export default props => {
         <h4>EDUCATION</h4>
         <span>Education I've recieved.</span>
         <Item>
+          <span>2019 - 2021</span>
+          <h6>M.A Psychology</h6>
+          <p>IGNOU</p>
+        </Item>
+        <Item>
           <span>2013 - 2016</span>
           <h6>BCom Honours</h6>
-          <p>GGSIP University, Delhi</p>
+          <p>GGSIP University</p>
         </Item>
         <Item>
           <span>2007-2012</span>
           <h6>SECONDARY EDUCATION</h6>
-          <p>Vandana International School</p>
+          <p>CBSE Board</p>
         </Item>
       </Section>
-      <a id="honoursAndAwards">Honours & Awards</a>
+      <a id="tech">TECH</a>
       <Section center>
         <h4>TECH</h4>
         <span>Technologies I enjoy working with</span>
