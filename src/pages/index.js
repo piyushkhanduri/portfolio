@@ -209,16 +209,8 @@ export default props => {
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
             <p>
-              Hey! I am Piyush Khanduri. “I am a explorer. I help
-              business to make right marketing decision.” Currently working as a
-              digital marketer at Publicis Groupe focusing on social media
-              marketing platforms. As far as my work goes I’ve probably worn
-              every hat on the rack, most notable my marketing strategies,
-              business reengineering and story telling. Don’t let my clean lines
-              and weakness for Swiss type fool you. My work has been pretty
-              diverse and enjoyable, to know more about my work and skills,
-              follow me on my blogs and social media channels. Links above or
-              bottom of the page.
+            Hey! I am Piyush Khanduri. “I am a problem solver and absolutely hilarious at it.” Currently working for Publicis Groupe and helping their clients in digital media planning and executing. As far as my work goes I’ve probably worn every hat on the rack, most notable my marketing strategies and storytelling. 
+            Don’t let my clean lines and weakness for Swiss type fool you. My work has been pretty diverse and enjoyable, to know more about my work and skills, follow me on my blogs and social media channels. Links above or bottom of the page.
             </p>
           </Box>
           <Box px={2} width={180}>
