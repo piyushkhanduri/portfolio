@@ -191,15 +191,15 @@ export default props => {
         icons={[
           {
             name: "twitter",
-            href: "https://twitter.com/darren_britton"
+            href: "https://www.linkedin.com/in/piyushkhanduri/"
           },
           {
             name: "github-alt",
-            href: "https://github.com/darrenbritton"
+            href: "https://www.linkedin.com/in/piyushkhanduri/"
           },
           {
             name: "linkedin",
-            href: "https://ie.linkedin.com/in/darrenbritton"
+            href: "https://www.linkedin.com/in/piyushkhanduri/"
           }
         ]}
       />
@@ -209,16 +209,8 @@ export default props => {
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
             <p>
-              Hey! I am Piyush Khanduri. “I am a Marketer by passion. I help
-              business to make right marketing decision.” Currently working as a
-              digital marketer at Publicis Groupe focusing on social media
-              marketing platforms. As far as my work goes I’ve probably worn
-              every hat on the rack, most notable my marketing strategies,
-              business reengineering and story telling. Don’t let my clean lines
-              and weakness for Swiss type fool you. My work has been pretty
-              diverse and enjoyable, to know more about my work and skills,
-              follow me on my blogs and social media channels. Links above or
-              bottom of the page.
+            Hey! I am Piyush Khanduri. “I am a problem solver and absolutely hilarious at it.” Currently working for Publicis Groupe and helping their clients in digital media planning and executing. As far as my work goes I’ve probably worn every hat on the rack, most notable my marketing strategies and storytelling. 
+            Don’t let my clean lines and weakness for Swiss type fool you. My work has been pretty diverse and enjoyable, to know more about my work and skills, follow me on my blogs and social media channels. Links above or bottom of the page.
             </p>
           </Box>
           <Box px={2} width={180}>
@@ -242,7 +234,7 @@ export default props => {
         <Item>
           <span>NOV 2019 - CURRENT</span>
           <h6>Publicis Groupe</h6>
-          <p>Social Media Expert</p>
+          <p>Media Planner</p>
         </Item>
         <Item>
           <span>SEPT 2018 - NOV 2019</span>
@@ -260,7 +252,7 @@ export default props => {
           <p>Marketing Executive</p>
         </Item>
       </Section>
-      <a id="tech">Tech</a>
+      <a id="tech">Associations</a>
       <Section center>
         <h4>Associations</h4>
         <span>Brands and projects I have worked with</span>
@@ -275,17 +267,22 @@ export default props => {
         <h4>EDUCATION</h4>
         <span>Education I've recieved.</span>
         <Item>
+          <span>2019 - 2021</span>
+          <h6>M.A Psychology</h6>
+          <p>IGNOU</p>
+        </Item>
+        <Item>
           <span>2013 - 2016</span>
           <h6>BCom Honours</h6>
-          <p>GGSIP University, Delhi</p>
+          <p>GGSIP University</p>
         </Item>
         <Item>
           <span>2007-2012</span>
           <h6>SECONDARY EDUCATION</h6>
-          <p>Vandana International School</p>
+          <p>CBSE Board</p>
         </Item>
       </Section>
-      <a id="honoursAndAwards">Honours & Awards</a>
+      <a id="tech">TECH</a>
       <Section center>
         <h4>TECH</h4>
         <span>Technologies I enjoy working with</span>
