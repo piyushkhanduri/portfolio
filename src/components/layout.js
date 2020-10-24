@@ -42,7 +42,9 @@ const PageBase = ({ location, children }) => {
           { name: 'keywords', content: 'piyush, khanduri, portfolio' },
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         ]}
-      />
+      >
+        <link rel="icon" type="image/png" href="favicon.png" />
+        </Helmet>
       <Content>{children}</Content>
       {location && location.pathname != '/404' && <Footer />}
     </Body>
