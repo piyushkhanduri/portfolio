@@ -191,11 +191,11 @@ export default props => {
         icons={[
           {
             name: "twitter",
-            href: "https://www.linkedin.com/in/piyushkhanduri/"
+            href: "https://twitter.com/PanaceaPiyush"
           },
           {
-            name: "github-alt",
-            href: "https://www.linkedin.com/in/piyushkhanduri/"
+            name: "instagram",
+            href: "https://www.instagram.com/discoveringpanacea/"
           },
           {
             name: "linkedin",
