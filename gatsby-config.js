@@ -2,36 +2,37 @@ const { NODE_ENV, CONTEXT: NETLIFY_ENV = NODE_ENV } = process.env;
 
 module.exports = {
   siteMetadata: {
-    title: `Piyush Khanduri`
+    title: `Piyush Khanduri`,
+    siteUrl: `https://piyushkhanduri.com`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`pacifico:400`, `raleway:100,400,600,700`, "lato: 300,400,500"]
-      }
+        fonts: [`pacifico:400`, `raleway:100,400,600,700`, "lato: 300,400,500"],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`
-      }
+        path: `${__dirname}/src/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`
-      }
+        name: `blog`,
+      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`
-      }
+        pathToConfigModule: `src/utils/typography`,
+      },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -61,17 +62,17 @@ module.exports = {
               // will be rendered at 50px.
               //
               // Defaults to false.
-              sizeByPixelDensity: false
-            }
-          }
-        ]
-      }
+              sizeByPixelDensity: false,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-47904062-1`
-      }
+        trackingId: `UA-47904062-1`,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -84,7 +85,7 @@ module.exports = {
         icon: "static/favicon.png",
         display: "minimal-ui",
         include_favicon: true,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-robots-txt`,
@@ -92,26 +93,26 @@ module.exports = {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
+            policy: [{ userAgent: "*", disallow: ["/"] }],
           },
-          'branch-deploy': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
+          "branch-deploy": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
             sitemap: null,
-            host: null
+            host: null,
           },
-          'deploy-preview': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
+          "deploy-preview": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
             sitemap: null,
-            host: null
-          }
-        }
-      }
+            host: null,
+          },
+        },
+      },
     },
     {
       resolve: "gatsby-plugin-sentry",
       options: {
-        dsn: "https://23d8e0b792d442d29d0b4344a79ef87d@sentry.io/170806"
-      }
-    }
-  ]
+        dsn: "https://23d8e0b792d442d29d0b4344a79ef87d@sentry.io/170806",
+      },
+    },
+  ],
 };
