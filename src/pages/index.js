@@ -191,11 +191,11 @@ export default props => {
         icons={[
           {
             name: "twitter",
-            href: "https://www.linkedin.com/in/piyushkhanduri/"
+            href: "https://twitter.com/PanaceaPiyush"
           },
           {
-            name: "github-alt",
-            href: "https://www.linkedin.com/in/piyushkhanduri/"
+            name: "instagram",
+            href: "https://www.instagram.com/discoveringpanacea/"
           },
           {
             name: "linkedin",
@@ -213,15 +213,7 @@ export default props => {
             Don’t let my clean lines and weakness for Swiss type fool you. My work has been pretty diverse and enjoyable, to know more about my work and skills, follow me on my blogs and social media channels. Links above or bottom of the page.
             </p>
           </Box>
-          <Box px={2} width={180}>
-            <Img
-              sizes={
-                props.data.allFile
-                  ? props.data.allFile.edges[0].node.childImageSharp.sizes
-                  : {}
-              }
-            />
-          </Box>
+          
         </Flex>
       </Section>
       {/* <Title small>Portfolio</Title> */}
@@ -300,7 +292,7 @@ export default props => {
     <Layout location={props.location}>
       <NavBar main children={content.props.children} />
       {content}
-      <a href="/blog">Blog</a>
+      
     </Layout>
   );
 };
