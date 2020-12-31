@@ -59,6 +59,10 @@ class Footer extends React.Component {
                       href: 'https://twitter.com/PanaceaPiyush',
                     },
                     {
+                      name: 'youtube',
+                      href: 'https://www.youtube.com/channel/UCQR4tqiCqRfiPvKPw4o3TXg/',
+                    },
+                    {
                       name: 'instagram',
                       href: 'https://www.instagram.com/discoveringpanacea',
                     },

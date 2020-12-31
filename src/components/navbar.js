@@ -96,6 +96,13 @@ class NavBar extends React.Component {
         </li>
       )
     })
+    links.push((
+      <li key={'blog'}>
+          <a href="/blog">
+            {"Blog"}
+          </a>
+        </li>
+    ));
     return (
       <Base {...this.props}>
         <Flex>
