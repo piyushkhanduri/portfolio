@@ -71,13 +71,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-47904062-1`,
+        trackingId: ``
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Piyush Khanduri Portfolio",
+        name: "About Piyush Khanduri",
         short_name: "Piyush Khanduri",
         start_url: "/",
         background_color: "#292929",
