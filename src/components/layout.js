@@ -38,8 +38,8 @@ const PageBase = ({ location, children }) => {
       <Helmet
         title="Piyush Khanduri"
         meta={[
-          { name: 'description', content: 'portfolio' },
-          { name: 'keywords', content: 'piyush, khanduri, portfolio' },
+          { name: 'description', content: 'Piyush Khanduri is a Digital Marketer, with expertise in Social Media Strategy. For more than 5 years in the industry, he is helping companies in Branding and Marketing. He is also a student of psychology. He has been a host in various online programmes and events. He is also working with various NGOs around the globe which provide help to people around the globe. ' },
+          { name: 'keywords', content: 'piyush, khanduri, Digital, Marketer, social, media, strategy, branding, marketing, psychology, host , anchor, NGOs ' },
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         ]}
       >
