@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import { Flex, Box } from 'grid-styled'
 import scrollToElement from 'scroll-to-element'
+import _concat from 'lodash/concat';
 
 import Name from './name'
 
@@ -68,7 +69,7 @@ const Base = styled.div`
     `}
 
   ${media.xs`
-    & ul {
+  & ul li:nth-of-type(1n+2) {
       display: none;
     }
   `}
@@ -83,7 +84,8 @@ class NavBar extends React.Component {
       })
       .filter(n => n != undefined)
       .reverse()
-    const links = linkMap.map(function(link) {
+    const links = [];
+    const mappedLinks = linkMap.map(function(link) {
       return (
         <li key={link.name}>
           <a
@@ -97,12 +99,13 @@ class NavBar extends React.Component {
       )
     })
     links.push((
-      <li key={'blog'}>
+      <li key={'blog'} className="blog-link">
           <a href="/blog">
             {"Blog"}
           </a>
         </li>
     ));
+    const newLinks = _concat(links, mappedLinks);
     return (
       <Base {...this.props}>
         <Flex>
@@ -110,7 +113,7 @@ class NavBar extends React.Component {
             <Name />
           </Box>
           <Box px={2} width={[0, 2 / 3, 4 / 6]}>
-            <ul>{links}</ul>
+            <ul>{newLinks}</ul>
           </Box>
         </Flex>
       </Base>

@@ -69,15 +69,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        trackingId: `UA-47904062-1`,
+        trackingId: `GTM-WC74HTL`
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Piyush Khanduri Portfolio",
+        name: "About Piyush Khanduri",
         short_name: "Piyush Khanduri",
         start_url: "/",
         background_color: "#292929",
